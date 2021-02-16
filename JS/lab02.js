@@ -22,7 +22,7 @@ if (myEducation === 'yes' || myEducation === 'y') {
   alert('no, I am an engineer');
 }
 else if (myEducation === 'no' || myEducation === 'n') {
-  alert('Good, you know me very good');
+  alert('Good, you know me very good , i am an engineer');
 }
 else {
   alert('you entered unvalid answer');
@@ -32,7 +32,7 @@ let myAge = prompt('Am i 30 years old?');
 myAge = myAge.toLowerCase();
 console.log('Am i 30 years old?' + ' ' + myAge);
 if (myAge === 'yes' || myAge === 'y') {
-  alert('OMG, thats too much');
+  alert('OMG, thats too much ,i am 24');
 }
 else if (myAge === 'no' || myAge === 'n') {
   alert('congrats, your answer is true');
@@ -48,7 +48,7 @@ if (myFavoriteFood === 'yes' || myFavoriteFood === 'y') {
   alert('Yes, It is delecious, Isn\'t it?');
 }
 else if (myFavoriteFood === 'no' || myFavoriteFood === 'n') {
-  alert('No, your answer is wrong');
+  alert('No, your answer is wrong,I love pizza');
 }
 else {
   alert('you entered unvalid answer');
