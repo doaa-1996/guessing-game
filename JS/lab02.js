@@ -1,81 +1,43 @@
 'use strict';
 let score=0;
-alert('Welcome to my page ,I will ask you some questions please answer with yes or no ')
-let myCountry = prompt('Do you think i live in Jordan?');
-myCountry = myCountry.toLowerCase();
-console.log('Do you think i live in Jordan ?' + ' ' + myCountry);
+alert('Welcome to my page ,I will ask you some questions please answer with yes or no ');
 
-if (myCountry === 'yes' || myCountry === 'y') {
-  alert('Great job, I live in Jordan');
-  score++;
-}
-else if (myCountry === 'no' || myCountry === 'n') {
-  alert('No, thats wrong i live in Jordan');
-}
-else {
-  alert('you entered unvalid answer');
-}
+function check(promptMessage, correctMessage, incorrectMessage, correctAnswer){
+  let value = prompt(promptMessage).toLowerCase();
 
-let myEducation = prompt('Am i a doctor?');
-myEducation = myEducation.toLowerCase();
-console.log('Am i a doctor?' + ' ' + myEducation);
-if (myEducation === 'yes' || myEducation === 'y') {
-  alert('no, I am an engineer');
-}
-else if (myEducation === 'no' || myEducation === 'n') {
-  alert('Good, you know me very good , i am an engineer');
-  score++;
-
-}
-else {
-  alert('you entered unvalid answer');
+  if (value === 'yes' || value === 'y') {
+    alert(correctMessage);
+    if(correctAnswer === 'yes'){
+      score++;
+    }
+  }
+  else if (value === 'no' || value === 'n') {
+    alert(incorrectMessage);
+    if(correctAnswer === 'no'){
+      score++;
+    }
+  }
+  else {
+    alert('you entered invalid answer');
+  }
 }
 
-let myAge = prompt('Am i 30 years old?');
-myAge = myAge.toLowerCase();
-console.log('Am i 30 years old?' + ' ' + myAge);
-if (myAge === 'yes' || myAge === 'y') {
-  alert('OMG, thats too much ,i am 24');
-}
-else if (myAge === 'no' || myAge === 'n') {
-  alert('congrats, your answer is true');
-  score++;
+// q 1
+check('Do you think i live in Jordan?', 'Great job, I live in Jordan', 'No, thats wrong i live in Jordan', 'yes');
 
-}
-else {
-  alert('you entered unvalid answer');
-}
+// q2
+check('Am i a doctor?', 'no, I am an engineer', 'Good, you know me very good , i am an engineer', 'no');
 
-let myFavoriteFood = prompt('Is my favorite food pizza?');
-myFavoriteFood = myFavoriteFood.toLowerCase();
-console.log('Is my favorite food pizza?' + ' ' + myFavoriteFood);
-if (myFavoriteFood === 'yes' || myFavoriteFood === 'y') {
-  alert('Yes, It is delecious, Isn\'t it?');
-  score++;
+// q3
+check('Am i 30 years old?', 'OMG, thats too much ,i am 24', 'congrats, your answer is true', 'no');
 
-}
-else if (myFavoriteFood === 'no' || myFavoriteFood === 'n') {
-  alert('No, your answer is wrong,I love pizza');
-}
-else {
-  alert('you entered unvalid answer');
-}
+// q4
 
-let myFavoriteColor = prompt('Is my favorite color pink?');
-myFavoriteColor = myFavoriteColor.toLowerCase();
-console.log('Is my favorite color pink?' + ' ' + myFavoriteColor);
-if (myFavoriteColor === 'yes' || myFavoriteColor === 'y') {
-  alert('No, I dont like pink');
-}
-else if (myFavoriteColor === 'no' || myFavoriteColor === 'n') {
-  alert('yes, blue is much better');
-  score++;
+check('Is my favorite food pizza?', 'Yes, It is delecious, Isn\'t it?', 'No, your answer is wrong,I love pizza', 'yes');
 
-}
-else {
-  alert('you entered unvalid answer');
-}
+// q5
 
+check('Is my favorite color pink?', 'No, I dont like pink', 'yes, blue is much better', 'no');
 
 let userName = prompt('what is your name?');
 alert('welcome ' + userName);
@@ -83,16 +45,16 @@ alert('welcome ' + userName);
 let i = 0;
 alert('we will play a game ,you should guess the secret number , you have four trials only');
 while (i < 4) {
-  let secretNumber = prompt('guess the secret number ');
+  let secretNumber = Number(prompt('guess the secret number '));
   console.log('guess the secret number' + ' ' +secretNumber);
 
-  if (secretNumber > '4') {
+  if (secretNumber > 4) {
     alert('Too high , try again !');
     i++;
-  } else if (secretNumber < '4') {
+  } else if (secretNumber < 4) {
     alert('Too low !,try again');
     i++;
-  } else if (secretNumber === '4') {
+  } else if (secretNumber === 4) {
     alert('congrats, you guessed the secret number');
     score++;
 
