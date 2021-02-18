@@ -1,29 +1,28 @@
 #h1{
-    color: blue;
-    background-color: cornsilk;
-    font-style: oblique;
+    color:white;
+    font-style:initial;
     font-size: xx-large;
     text-align: center;
 }
 
 
 #h2{
-    color: blue;
-    background-color: cornsilk;
-    font-style: oblique;
+    color:lightblue;
+    background-color:gray;
+    font-style: initial;
     font-size: x-large; 
 }
 
 #p{
     color: black;
-    background-color: blue;
-    font-style: oblique;
+    background-color:white;
+    font-style:initial;
     font-size:larger ;
 }
 #p2{
     color:black ;
-    background-color: blue;
-    font-style: oblique;
+    background-color:white;
+    font-style:initial;
     font-size: x-large; 
 }
 body {
@@ -32,30 +31,28 @@ body {
    }
 
    #p3{
-    color: blue;
-    background-color: cornsilk;
-    font-style: oblique;
+    color:black;
+    background-color:white;
+    font-style:white;
     font-size: x-large; 
    }
    main ol li {
     color:white;
-    background-color:blue;
-    font-style: oblique;
+    font-style:initial;
     font-size: x-large; 
    }
 
 
    main ul li {
     color:white;
-    background-color:blue;
     font-style: oblique;
     font-size: x-large; 
    }
 
 
    #p4{
-    color: blue;
-    background-color: cornsilk;
-    font-style: oblique;
+    color:black;
+    background-color: white;
+    font-style:initial;
     font-size: x-large;   
    }
